@@ -901,7 +901,7 @@ bool submit_elf( mpz_class & seq, int from_iteration ) {
 	fo << post_data;
 	fo.close();
 	cout << "Sending " << sent_lines << " lines..." << endl;
-	system( ( "wget --cache=off --output-document=" + tmp_file + " --post-file=" + post_file + " http://factorization.ath.cx/search.php?report=true" ).c_str() );
+	system( ( "wget --cache=off --output-document=" + tmp_file + " --post-file=" + post_file + " http://factordb.com/search.php?report=true" ).c_str() );
 	delete_file( post_file.c_str() );
 
 	f.clear();
